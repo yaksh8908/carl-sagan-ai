@@ -1,0 +1,32 @@
+{
+  "name": "carl-sagan-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Plataforma de exploração espacial com galáxia 3D interativa e chatbot Carl Sagan AI.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "dev:server": "node --watch --disable-warning=ExperimentalWarning server/server.js",
+    "dev:client": "vite",
+    "build": "vite build",
+    "start": "node --disable-warning=ExperimentalWarning server/server.js",
+    "test": "node --test --disable-warning=ExperimentalWarning \"server/tests/*.test.js\""
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "framer-motion": "^11.18.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.0",
+    "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}
